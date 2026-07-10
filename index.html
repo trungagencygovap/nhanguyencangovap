@@ -176,69 +176,130 @@
 
         </div>
     </section>
-<!-- QUY TRÌNH THUÊ NHÀ & KHU VỰC PHỤC VỤ -->
-    <section class="max-w-7xl mx-auto px-4 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
-            <!-- CỘT 1 & 2: QUY TRÌNH THUÊ NHÀ (Chiếm 2 phần diện tích) -->
-            <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-lg font-bold text-blue-900 tracking-wide mb-6 text-center lg:text-left">QUY TRÌNH THUÊ NHÀ</h3>
-                    
-                    <!-- Các bước quy trình -->
-                    <div class="grid grid-cols-1 sm:grid-cols-5 gap-4 relative">
-                        <!-- Bước 1 -->
-                        <div class="text-center flex flex-col items-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 relative">
-                                <i class="fa-solid fa-house-chimney text-lg"></i>
-                                <span class="absolute -bottom-1 bg-blue-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 text-xs mt-3">Chọn căn</h4>
-                            <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">Tìm căn phù hợp nhu cầu</p>
-                        </div>
+<!-- Quy Trình Thuê Nhà -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
 
-                        <!-- Bước 2 -->
-                        <div class="text-center flex flex-col items-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 relative">
-                                <i class="fa-solid fa-phone text-lg"></i>
-                                <span class="absolute -bottom-1 bg-blue-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 text-xs mt-3">Liên hệ</h4>
-                            <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">Gọi hoặc nhắn Zalo cho chúng tôi</p>
-                        </div>
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-blue-700">
+                QUY TRÌNH <span class="text-orange-500">THUÊ NHÀ</span>
+            </h2>
+            <p class="text-gray-500 mt-2">
+                Chỉ với 5 bước đơn giản để tìm được căn hộ phù hợp.
+            </p>
+        </div>
 
-                        <!-- Bước 3 -->
-                        <div class="text-center flex flex-col items-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 relative">
-                                <i class="fa-solid fa-calendar-days text-lg"></i>
-                                <span class="absolute -bottom-1 bg-blue-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">3</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 text-xs mt-3">Hẹn xem nhà</h4>
-                            <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">Hỗ trợ xem nhà miễn phí</p>
-                        </div>
+        <div class="grid md:grid-cols-5 gap-6">
 
-                        <!-- Bước 4 -->
-                        <div class="text-center flex flex-col items-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 relative">
-                                <i class="fa-solid fa-file-signature text-lg"></i>
-                                <span class="absolute -bottom-1 bg-blue-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">4</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 text-xs mt-3">Ký hợp đồng</h4>
-                            <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">Hỗ trợ soạn hợp đồng nhanh chóng</p>
-                        </div>
-
-                        <!-- Bước 5 -->
-                        <div class="text-center flex flex-col items-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 relative">
-                                <i class="fa-solid fa-key text-lg"></i>
-                                <span class="absolute -bottom-1 bg-blue-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">5</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 text-xs mt-3">Nhận nhà</h4>
-                            <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">Bàn giao nhà và hỗ trợ sau thuê</p>
-                        </div>
-                    </div>
+            <!-- Bước 1 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-2 duration-300">
+                <div class="w-20 h-20 mx-auto rounded-full bg-blue-100 flex items-center justify-center">
+                    <i class="fas fa-home text-4xl text-blue-600"></i>
                 </div>
+
+                <div class="mt-4">
+                    <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                        Bước 1
+                    </span>
+                </div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Chọn căn
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Tìm căn hộ hoặc nhà nguyên căn phù hợp với nhu cầu.
+                </p>
             </div>
+
+            <!-- Bước 2 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-2 duration-300">
+                <div class="w-20 h-20 mx-auto rounded-full bg-orange-100 flex items-center justify-center">
+                    <i class="fas fa-phone text-4xl text-orange-500"></i>
+                </div>
+
+                <div class="mt-4">
+                    <span class="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                        Bước 2
+                    </span>
+                </div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Liên hệ
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Gọi Hotline hoặc nhắn Zalo để được tư vấn.
+                </p>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-2 duration-300">
+                <div class="w-20 h-20 mx-auto rounded-full bg-blue-100 flex items-center justify-center">
+                    <i class="fas fa-calendar-check text-4xl text-blue-600"></i>
+                </div>
+
+                <div class="mt-4">
+                    <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                        Bước 3
+                    </span>
+                </div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Hẹn xem nhà
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Hỗ trợ xem nhà miễn phí theo thời gian phù hợp.
+                </p>
+            </div>
+
+            <!-- Bước 4 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-2 duration-300">
+                <div class="w-20 h-20 mx-auto rounded-full bg-orange-100 flex items-center justify-center">
+                    <i class="fas fa-file-signature text-4xl text-orange-500"></i>
+                </div>
+
+                <div class="mt-4">
+                    <span class="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                        Bước 4
+                    </span>
+                </div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Ký hợp đồng
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Kiểm tra thông tin và ký hợp đồng thuê.
+                </p>
+            </div>
+
+            <!-- Bước 5 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-2 duration-300">
+                <div class="w-20 h-20 mx-auto rounded-full bg-blue-100 flex items-center justify-center">
+                    <i class="fas fa-key text-4xl text-blue-600"></i>
+                </div>
+
+                <div class="mt-4">
+                    <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                        Bước 5
+                    </span>
+                </div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Nhận nhà
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Nhận chìa khóa và chuyển vào ở ngay.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
             <!-- CỘT 3: KHU VỰC CHÚNG TÔI PHỤC VỤ (Chiếm 1 phần diện tích) -->
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
