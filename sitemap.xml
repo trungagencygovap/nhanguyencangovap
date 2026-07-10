@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Trang chủ Trung Agency -->
+  <url>
+    <loc>https://trungagencygovap.github.io/nhanguyencangovap/index.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Trang Blog / Cẩm nang tin tức -->
+  <url>
+    <loc>https://trungagencygovap.github.io/nhanguyencangovap/blog.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Trang Giới thiệu -->
+  <url>
+    <loc>https://trungagencygovap.github.io/nhanguyencangovap/gioi-thieu.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Trang Chính sách bảo mật -->
+  <url>
+    <loc>https://trungagencygovap.github.io/nhanguyencangovap/privacy.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- Trang Điều khoản sử dụng -->
+  <url>
+    <loc>https://trungagencygovap.github.io/nhanguyencangovap/terms.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+<!-- Trang Giới thiệu -->
+  <url>
+    <loc>https://trungagencygovap.github.io/nhanguayencangovap/gioi-thieu.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>

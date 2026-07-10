@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cẩm Nang Thuê Nhà & Tin Tức Bất Động Sản - Trung Agency</title>
+    <meta name="description" content="Chia sẻ kinh nghiệm thuê căn hộ, phòng trọ, nhà nguyên căn chính chủ tại Gò Vấp và Quận 12. Cập nhật thị trường mới nhất cùng Trung Agency.">
+    <!-- Nhúng Tailwind CSS để dựng giao diện nhanh -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Nhúng Font Awesome để dùng Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- HEADER & NAVIGATION (Đồng bộ với trang chủ) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-900 text-orange-500 font-bold p-2 rounded-full text-xl w-12 h-12 flex items-center justify-center shadow">TA</div>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900 tracking-tight">TRUNG AGENCY</h1>
+                    <p class="text-xs text-gray-500 font-medium">Cho Thuê Căn Hộ & Nhà Nguyên Căn Gò Vấp</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-semibold text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">TRANG CHỦ</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">CĂN HỘ</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">NHÀ NGUYÊN CĂN</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">KHU VỰC</a>
+                <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-1">BLOG</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">GIỚI THIỆU</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">LIÊN HỆ</a>
+            </nav>
+            <a href="tel:0919502481" class="bg-orange-500 text-white px-5 py-2.5 rounded-lg font-bold flex items-center space-x-2 hover:bg-orange-600 transition">
+                <i class="fa-solid fa-phone"></i>
+                <span>0919.502.481</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- BANNER TRANG BLOG -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-950 py-12 px-4 text-center text-white">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <h2 class="text-3xl font-bold tracking-wide">CẨM NANG & TIN TỨC</h2>
+            <p class="text-blue-200 text-sm max-w-xl mx-auto leading-relaxed">Chia sẻ kinh nghiệm thuê nhà, mẹo xem phòng tránh rủi ro và cập nhật xu hướng giá thuê mới nhất tại Gò Vấp, Quận 12.</p>
+        </div>
+    </section>
+
+    <!-- KHU VỰC BÀI VIẾT (BLOG GRID) -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Bài viết 1 -->
+            <article class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col group hover:shadow-md transition">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Kinh nghiệm thuê phòng trọ Gò Vấp" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 bg-blue-900 text-white font-semibold text-[10px] px-2.5 py-1 rounded shadow">Kinh Nghiệm</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[11px] text-gray-400 flex items-center space-x-3 mb-2 font-medium">
+                            <span><i class="fa-regular fa-calendar mr-1"></i> 10/07/2026</span>
+                            <span><i class="fa-regular fa-user mr-1"></i> Trung Agency</span>
+                        </div>
+                        <h3 class="font-bold text-gray-950 text-base group-hover:text-blue-600 cursor-pointer line-clamp-2 transition tracking-tight">
+                            5 Điều cần lưu ý khi ký hợp đồng thuê căn hộ mini tại Gò Vấp
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-2 line-clamp-3 leading-relaxed">
+                            Để tránh các tranh chấp phát sinh về tiền cọc, chi phí dịch vụ điện nước và quy định hoàn trả phòng, người đi thuê cần nắm rõ 5 nguyên tắc cốt lõi này trước khi đặt bút ký hợp đồng.
+                        </p>
+                    </div>
+                    <a href="#" class="text-blue-600 font-bold text-xs mt-4 inline-flex items-center group-hover:underline">
+                        Đọc bài viết <i class="fa-solid fa-angle-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Bài viết 2 -->
+            <article class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col group hover:shadow-md transition">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80" alt="Xu hướng giá thuê nhà nguyên căn Quận 12" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 bg-blue-900 text-white font-semibold text-[10px] px-2.5 py-1 rounded shadow">Thị Trường</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[11px] text-gray-400 flex items-center space-x-3 mb-2 font-medium">
+                            <span><i class="fa-regular fa-calendar mr-1"></i> 08/07/2026</span>
+                            <span><i class="fa-regular fa-user mr-1"></i> Trung Agency</span>
+                        </div>
+                        <h3 class="font-bold text-gray-950 text-base group-hover:text-blue-600 cursor-pointer line-clamp-2 transition tracking-tight">
+                            Phân tích xu hướng giá thuê nhà nguyên căn khu vực Thạnh Xuân, Quận 12
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-2 line-clamp-3 leading-relaxed">
+                            Với làn sóng dịch chuyển ra vùng ven, phân khúc nhà nguyên căn dilapidated hoặc nhà hẻm lớn tại Quận 12 đang có sự biến động mạnh về giá. Cùng Trung Agency tìm hiểu chi tiết.
+                        </p>
+                    </div>
+                    <a href="#" class="text-blue-600 font-bold text-xs mt-4 inline-flex items-center group-hover:underline">
+                        Đọc bài viết <i class="fa-solid fa-angle-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Bài viết 3 -->
+            <article class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col group hover:shadow-md transition">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Mẹo trang trí phòng trọ studio" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute top-3 left-3 bg-blue-900 text-white font-semibold text-[10px] px-2.5 py-1 rounded shadow">Mẹo Nhà Cửa</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[11px] text-gray-400 flex items-center space-x-3 mb-2 font-medium">
+                            <span><i class="fa-regular fa-calendar mr-1"></i> 05/07/2026</span>
+                            <span><i class="fa-regular fa-user mr-1"></i> Trung Agency</span>
+                        </div>
+                        <h3 class="font-bold text-gray-950 text-base group-hover:text-blue-600 cursor-pointer line-clamp-2 transition tracking-tight">
+                            Mẹo tối ưu không gian cho căn hộ Studio diện tích nhỏ từ 25m² - 30m²
+                        </h3>
+                        <p class="text-xs text-gray-500 mt-2 line-clamp-3 leading-relaxed">
+                            Biến căn hộ studio nhỏ hẹp trở nên rộng rãi, thông thoáng và đầy đủ tiện nghi bằng cách sắp xếp nội thất thông minh, tận dụng tối đa ánh sáng tự nhiên có sẵn của ban công.
+                        </p>
+                    </div>
+                    <a href="#" class="text-blue-600 font-bold text-xs mt-4 inline-flex items-center group-hover:underline">
+                        Đọc bài viết <i class="fa-solid fa-angle-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER (Đoạn này đồng bộ với trang chủ) -->
+    <footer class="bg-blue-950 text-gray-300 pt-12 pb-6 border-t border-blue-900 mt-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-white text-blue-950 font-bold p-1 rounded-full text-base w-9 h-9 flex items-center justify-center">TA</div>
+                    <span class="text-lg font-bold text-white tracking-wider">TRUNG AGENCY</span>
+                </div>
+                <p class="text-xs leading-relaxed text-gray-400">Dịch vụ truyền thông và quảng cáo nguồn nhà đất cho thuê chính chủ chuyên nghiệp tại khu vực quận Gò Vấp và Quận 12.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4 text-sm tracking-wide">LIÊN HỆ</h5>
+                <ul class="space-y-2.5 text-xs text-gray-400">
+                    <li><i class="fa-solid fa-phone mr-2 text-orange-400"></i> 0919.502.481</li>
+                    <li><i class="fa-solid fa-envelope mr-2 text-orange-400"></i> trungagency.gv@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot mr-2 text-orange-400"></i> Gò Vấp, TP. Hồ Chí Minh</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4 text-sm tracking-wide">DỊCH VỤ</h5>
+                <ul class="space-y-2 text-xs text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Cho thuê căn hộ</a></li>
+                    <li><a href="#" class="hover:text-white transition">Cho thuê nhà nguyên căn</a></li>
+                    <li><a href="#" class="hover:text-white transition">Ký gửi cho thuê</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4 text-sm tracking-wide">KẾT NỐI VỚI CHÚNG TÔI</h5>
+                <div class="flex space-x-3 text-lg">
+                    <a href="#" class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white hover:bg-blue-600 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white hover:bg-blue-600 transition"><i class="fa-solid fa-comment-dots"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white hover:bg-blue-600 transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-blue-900/60 max-w-7xl mx-auto px-4 pt-4 text-center text-xs text-gray-500">
+            &copy; 2026 Trung Agency. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

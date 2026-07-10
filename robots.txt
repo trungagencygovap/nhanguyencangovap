@@ -1,0 +1,9 @@
+# Cho phép tất cả các bot tìm kiếm (Google, Bing,...) quét dữ liệu website
+User-agent: *
+Allow: /
+
+# Chặn các thư mục hoặc tệp không cần hiển thị trên kết quả tìm kiếm (nếu có)
+Disallow: /README.md
+
+# Khai báo đường dẫn Sitemaps để Google quét cấu trúc web nhanh hơn
+Sitemap: https://trungagencygovap.github.io/nhanguyencangovap/sitemap.xml
