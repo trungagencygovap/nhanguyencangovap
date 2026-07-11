@@ -17,19 +17,19 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- HEADER & NAVIGATION 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <!-- HEADER & NAVIGATION
+    <header class="bg-white shadow sticky top-0 z-50">
+        <!-- Hàng 1: Logo, Tên Agency và Nút Hotline nhỏ gọn -->
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Khu vực Logo -->
-            <div class="flex items-center space-x-2">
-                <div class="bg-blue-900 text-orange-500 font-bold p-2 rounded-full text-lg w-10 h-10 flex items-center justify-center shadow shrink-0">TA</div>
+            <div class="flex items-center space-x-2.5">
+                <div class="bg-blue-900 text-orange-500 font-bold p-2 rounded-full text-lg w-10 h-10 flex items-center justify-center shrink-0">TA</div>
                 <div class="leading-tight">
                     <h1 class="text-base font-bold text-blue-900 tracking-tight">TRUNG AGENCY</h1>
                     <p class="text-[10px] text-gray-500 font-medium">Căn Hộ & Nhà Nguyên Căn Gò Vấp</p>
                 </div>
             </div>
 
-            <!-- Menu cho máy tính (Giữ nguyên) -->
+            <!-- Menu cho máy tính (Chỉ hiện khi màn hình > 768px) -->
             <nav class="hidden md:flex space-x-6 font-semibold text-sm">
                 <a href="index.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">TRANG CHỦ</a>
                 <a href="blog.html" class="text-gray-600 hover:text-blue-600">BLOG</a>
@@ -37,20 +37,20 @@
                 <a href="lien-he.html" class="text-gray-600 hover:text-blue-600">LIÊN HỆ</a>
             </nav>
 
-            <!-- Nút gọi điện tự co giãn theo màn hình -->
-            <a href="tel:0919502481" class="bg-orange-500 text-white px-3 py-2 md:px-5 md:py-2.5 rounded-lg font-bold text-xs md:text-sm flex items-center space-x-1.5 hover:bg-orange-600 transition shrink-0">
+            <!-- Nút gọi điện gọn gàng hơn, không bị nhảy hàng -->
+            <a href="tel:0919502481" class="bg-orange-500 text-white px-3 py-1.5 md:px-5 md:py-2.5 rounded-full font-bold text-xs md:text-sm flex items-center space-x-1.5 hover:bg-orange-600 transition shrink-0">
                 <i class="fa-solid fa-phone"></i>
-                <span class="hidden xs:inline">0919.502.481</span>
-                <span class="xs:hidden">Gọi ngay</span>
+                <span class="md:inline hidden">0919.502.481</span>
+                <span class="md:hidden">Gọi ngay</span>
             </a>
         </div>
 
-        <!-- Thanh menu phụ xuất hiện riêng trên Điện thoại để khách bấm -->
-        <div class="flex md:hidden bg-blue-50 border-t border-blue-100 justify-around py-2 text-xs font-bold text-blue-900">
-            <a href="index.html" class="text-blue-600">TRANG CHỦ</a>
-            <a href="blog.html" class="text-gray-600">BLOG</a>
-            <a href="gioi-thieu.html" class="text-gray-600">GIỚI THIỆU</a>
-            <a href="lien-he.html" class="text-gray-600">LIÊN HỆ</a>
+        <!-- Hàng 2: Menu điều hướng mobile nhỏ gọn, cân đối -->
+        <div class="flex md:hidden bg-blue-50 border-t border-blue-100 justify-around py-1.5 text-xs font-bold text-blue-900">
+            <a href="index.html" class="text-blue-600 px-2 py-1">TRANG CHỦ</a>
+            <a href="blog.html" class="text-gray-600 px-2 py-1">BLOG</a>
+            <a href="gioi-thieu.html" class="text-gray-600 px-2 py-1">GIỚI THIỆU</a>
+            <a href="lien-he.html" class="text-gray-600 px-2 py-1">LIÊN HỆ</a>
         </div>
     </header>
     <!-- HERO SECTION & SEARCH BAR -->
