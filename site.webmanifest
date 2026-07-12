@@ -1,0 +1,24 @@
+{
+  "name": "Trung Agency | Căn Hộ & Nhà Cho Thuê Gò Vấp",
+  "short_name": "Trung Agency",
+  "description": "Cập nhật căn hộ, nhà nguyên căn và phòng trọ chính chủ tại Gò Vấp, Quận 12 và TP. Hồ Chí Minh.",
+  "start_url": "/nhanguyencangovap/",
+  "scope": "/nhanguyencangovap/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
+  "orientation": "portrait",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
