@@ -96,36 +96,179 @@
 
                 <!-- Thông tin liên hệ phụ -->
                 <div>
-                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                        <h2 class="text-3xl font-bold text-blue-700 mb-6">Thông tin chi tiết</h2>
-                        <div class="space-y-5">
-                            <div class="flex items-center gap-4">
-                                <i class="fas fa-phone text-2xl text-orange-500 w-8 text-center"></i>
-                                <div>
-                                    <p class="font-semibold">Hotline</p>
-                                    <a href="tel:0919502481" class="text-blue-600 font-medium">0919 502 481</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="fab fa-zalo text-2xl text-blue-600 w-8 text-center"></i>
-                                <div>
-                                    <p class="font-semibold">Zalo</p>
-                                    <a href="https://zalo.me/0919502481" class="text-blue-600 font-medium">Chat ngay</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="fas fa-envelope text-2xl text-orange-500 w-8 text-center"></i>
-                                <div>
-                                    <p class="font-semibold">Email</p>
-                                    <span class="text-gray-700">trungagency.gv@gmail.com</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="fas fa-location-dot text-2xl text-orange-500 w-8 text-center"></i>
-                                <div>
-                                    <p class="font-semibold">Khu vực hỗ trợ</p>
-                                    <span class="text-gray-700">Gò Vấp, Bình Thạnh, Quận 12, Tân Bình, Phú Nhuận</span>
-                                </div>
+                    <div <!-- Form Đăng Ký Tư Vấn Dành Cho Trang Liên Hệ -->
+<div class="trung-agency-contact-form">
+    <h3>Yêu Cầu Tìm Nhà Theo Nhu Cầu</h3>
+    <p>Bạn chưa tìm được căn ưng ý? Hãy để lại tiêu chuẩn, Trung Agency sẽ lọc kho hàng và gửi riêng cho bạn!</p>
+    
+    <form id="contactPageForm" action="THAY_LINK_FORMSPREE_CỦA_BẠN_VÀO_ĐÂY" method="POST">
+        <div class="form-group-row">
+            <div class="form-input-group">
+                <input type="text" id="fullname" name="Họ và Tên" placeholder="Họ và tên của bạn" required>
+            </div>
+            <div class="form-input-group">
+                <input type="tel" id="phone" name="Số Điện Thoại" placeholder="Số điện thoại (Zalo)" pattern="[0-9]{10}" required>
+            </div>
+        </div>
+        
+        <div class="form-input-group">
+            <select id="budget" name="Tầm Tài Chính">
+                <option value="" disabled selected>Chọn tầm tài chính hàng tháng</option>
+                <option value="Dưới 7 triệu">Dưới 7 triệu/tháng</option>
+                <option value="7 - 10 triệu">Từ 7 - 10 triệu/tháng</option>
+                <option value="10 - 15 triệu">Từ 10 - 15 triệu/tháng</option>
+                <option value="Trên 15 triệu">Trên 15 triệu/tháng</option>
+            </select>
+        </div>
+
+        <div class="form-input-group">
+            <select id="area" name="Khu Vực Tìm Kiếm">
+                <option value="" disabled selected>Chọn khu vực bạn muốn thuê</option>
+                <option value="Gò Vấp">Quận Gò Vấp</option>
+                <option value="Quận 12">Quận 12</option>
+                <option value="Gò Vấp hoặc Quận 12">Cả 2 khu vực trên</option>
+            </select>
+        </div>
+        
+        <div class="form-input-group">
+            <textarea id="note" name="Ghi Chú Chi Tiết" rows="3" placeholder="Ghi chú thêm (Ví dụ: Nhà hẻm xe hơi, cần mấy phòng ngủ, ngày dọn vào...)"></textarea>
+        </div>
+        
+        <!-- Nhãn ẩn để phân biệt khách đăng ký từ trang liên hệ chung -->
+        <input type="hidden" id="form_source" name="Nguồn Đăng Ký" value="Trang Liên Hệ Chung">
+
+        <button type="submit" id="submitBtn" class="btn-submit-contact">GỬI YÊU CẦU ĐẾN TRUNG AGENCY</button>
+    </form>
+    <div id="formResponse" style="display: none; margin-top: 15px; font-weight: bold; text-align: center;"></div>
+</div>
+
+<!-- CSS giao diện trang liên hệ lịch sự, chỉn chu -->
+<style>
+.trung-agency-contact-form {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.trung-agency-contact-form h3 {
+    color: #1a202c;
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.trung-agency-contact-form p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    margin: 0 0 25px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+.form-group-row {
+    display: flex;
+    gap: 15px;
+}
+.form-group-row .form-input-group {
+    flex: 1;
+}
+.form-input-group {
+    margin-bottom: 18px;
+}
+.form-input-group input, .form-input-group select, .form-input-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    background-color: #f8fafc;
+}
+.form-input-group input:focus, .form-input-group select:focus, .form-input-group textarea:focus {
+    border-color: #3b82f6;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+.btn-submit-contact {
+    width: 100%;
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.btn-submit-contact:hover {
+    background: #c9302c;
+}
+.btn-submit-contact:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Responsive cho màn hình điện thoại nhỏ */
+@media (max-width: 480px) {
+    .form-group-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .trung-agency-contact-form {
+        padding: 20px 15px;
+    }
+}
+</style>
+
+<!-- Script AJAX gửi form ngầm không reload trang -->
+<script>
+document.getElementById('contactPageForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const submitBtn = document.getElementById('submitBtn');
+    const responseDiv = document.getElementById('formResponse');
+    
+    submitBtn.disabled = true;
+    submitBtn.innerText = "ĐANG GỬI YÊU CẦU...";
+
+    // THAY LINK FORMSPREE CỦA BẠN VÀO ĐÂY ĐỂ ĐỒNG BỘ JAVASCRIPT
+    const formspreeURL = "THAY_LINK_FORMSPREE_CỦA_BẠN_VÀO_ĐÂY"; 
+    
+    fetch(formspreeURL, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+        if (response.ok) {
+            responseDiv.style.display = "block";
+            responseDiv.style.color = "#22c55e";
+            responseDiv.innerHTML = "✓ Đã gửi thành công! Trung Agency sẽ lọc giỏ hàng và liên hệ bạn sớm nhất.";
+            submitBtn.innerText = "GỬI THÀNH CÔNG";
+            form.reset();
+        } else {
+            throw new Error('Gửi form thất bại');
+        }
+    })
+    .catch(error => {
+        responseDiv.style.display = "block";
+        responseDiv.style.color = "#ef4444";
+        responseDiv.innerHTML = "✕ Gửi thất bại. Bạn vui lòng liên hệ trực tiếp qua số Hotline/Zalo nhé!";
+        submitBtn.disabled = false;
+        submitBtn.innerText = "GỬI LẠI YÊU CẦU";
+    });
+});
+</script>
                             </div>
                         </div>
                     </div>
