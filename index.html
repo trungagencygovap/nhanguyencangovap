@@ -684,5 +684,53 @@ body {
         </div>
     </footer>
 
+<script>
+const btn = document.getElementById("searchBtn");
+
+btn.addEventListener("click", function () {
+
+    const area = document.getElementById("area").value;
+    const type = document.getElementById("type").value;
+    const price = document.getElementById("price").value;
+    const bedroom = document.getElementById("bedroom").value;
+
+    const cards = document.querySelectorAll(".property-card");
+
+    let found = 0;
+
+    cards.forEach(card => {
+
+        const okArea =
+            area === "Chọn khu vực..." ||
+            card.dataset.area === area;
+
+        const okType =
+            type === "Chọn loại hình..." ||
+            card.dataset.type === type;
+
+        const okPrice =
+            price === "Chọn mức giá..." ||
+            card.dataset.price === price;
+
+        const okBedroom =
+            bedroom === "Chọn số PN..." ||
+            card.dataset.bedroom === bedroom;
+
+        if (okArea && okType && okPrice && okBedroom) {
+            card.style.display = "flex";
+            found++;
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+    if (found === 0) {
+        alert("Không tìm thấy bất động sản phù hợp.");
+    }
+
+});
+</script>
+
 </body>
 </html>
