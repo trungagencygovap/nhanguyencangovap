@@ -155,11 +155,11 @@
     <!-- Script điều khiển slide ảnh mượt mà -->
     <script>
     const images = [
-        "images/studio2.jpg",
-        "images/studio3.jpg",
-        "images/studio4.jpg",
-        "images/studio5.jpg",
-        "images/studio1.jpg"
+        "studio-goc-nhin-khac.jpg",
+        "studio-ban-cong.jpg",
+        "studio-phong-ngu.jpg",
+        "studio-nha-bep.jpg",
+        "studio-nha-ve-sinh.jpg"
     ];
 
     let current = 0;
@@ -211,35 +211,6 @@
     </script>
     <script src="assets/js/internal-links.js"></script>
     ...
-
-    <!-- Các phần nội dung khác -->
-
-<script>
-const images = [
-    "studio-goc-nhin-khac.jpg",
-    "studio-ban-cong.jpg",
-    "studio-phong-ngu.jpg",
-    "studio-nha-bep.jpg",
-    "studio-nha-ve-sinh.jpg"
-];
-
-let current = 0;
-
-function changeImage(index){
-    current = index;
-    document.getElementById("mainImage").src = images[current];
-}
-
-function nextImage(){
-    current = (current + 1) % images.length;
-    changeImage(current);
-}
-
-function prevImage(){
-    current = (current - 1 + images.length) % images.length;
-    changeImage(current);
-}
-</script>
 
 </body>
 </html>
