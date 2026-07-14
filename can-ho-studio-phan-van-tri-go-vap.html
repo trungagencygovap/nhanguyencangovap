@@ -52,21 +52,22 @@
         <!-- Slider Ảnh (Đã gom chung làm 1 slider lớn nổi bật phía trên) -->
         <section class="mb-8">
             <div class="relative overflow-hidden rounded-2xl shadow-lg bg-black h-[300px] sm:h-[450px] md:h-[500px]">
-                <!-- Ảnh chính -->
-                <img id="mainImage" 
-                     src="studio-goc-nhin-khac.jpg" 
-                     alt="Căn hộ Studio Phan Văn Trị Gò Vấp" 
-                     class="w-full h-full object-cover transition-all duration-500 transform scale-100">
-                
-                <!-- Nút điều hướng -->
-                <button onclick="studio-ban-cong.jpg" aria-label="Ảnh trước"
-                        class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-xl transition backdrop-blur-sm">
-                    ❮
-                </button>
-                <button onclick="studio-phong-ngu.jpg" aria-label="Ảnh tiếp theo"
-                        class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-xl transition backdrop-blur-sm">
-                    ❯
-                </button>
+               <!-- Ảnh chính -->
+<img id="mainImage"
+     src="images/apartments/studio-goc-nhin-khac.jpg"
+     alt="Căn hộ Studio Phan Văn Trị Gò Vấp"
+     class="w-full h-full object-cover transition-all duration-500">
+
+<!-- Nút điều hướng -->
+<button onclick="prevImage()" aria-label="Ảnh trước"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 rounded-full">
+    ❮
+</button>
+
+<button onclick="nextImage()" aria-label="Ảnh tiếp theo"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 rounded-full">
+    ❯
+</button>
             </div>
 
             <!-- Ảnh thumbnails nhỏ bên dưới -->
